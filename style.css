@@ -1,0 +1,363 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header{
+    padding: 15px;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width:580px){
+    header{
+        justify-content: center;
+    }
+}
+
+header img{
+    width: 30px;
+    height: 30px;
+}
+
+header h1{
+    margin: 0;
+    color: white;
+    margin-left: 7px ;
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif)),Helvetica,Arial,sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0) 100%);
+}
+
+@media(max-width:580px){
+    .container{
+        background: black;
+    }
+}
+
+
+.storage{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+    gap: 10px;
+}
+
+.login{
+    padding: 10px;
+    color: white;
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif)),Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+@media(max-width:334px){
+    .login{
+        font-size: 2em;
+    }
+}
+
+@media(max-width:280px){
+    .login{
+        font-size: 1.75em;
+    }
+}
+
+@media(max-width:576px){
+    .storage{
+        width: 100%;
+    }
+}
+
+@media(min-width:577px) and (max-width:768px){
+    .storage{
+        width: 540px;
+    }
+}
+
+@media(min-width:769px) and (max-width:1999px){
+    .storage{
+        width: 600px;
+    }
+}
+
+@media(min-width:1200px){
+    .storage{
+        width: 700px;
+    }
+}
+
+.google{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 40px;
+    width: 40%;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.google img{
+    width: 25px;
+    height: 25px;
+}
+
+.google p{
+    color: white;
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif)),Helvetica,Arial,sans-serif;
+    margin: 0;
+    font-size: 1.25em;
+}
+
+.google>p{
+    font-size: 1.25em;
+}
+
+@media(max-width:350px){
+    .google p{
+        font-size: 1.10em;
+    }
+}
+
+@media(max-width:400px){
+    .google{
+        width: 80%;
+    }
+    
+    .google>p{
+        font-size: 1.15em;
+    }
+}
+
+@media(min-width:400px) and (max-width:450px){
+    .google{
+        width: 70%;
+    }
+}
+
+@media(min-width:451px) and (max-width:576px){
+    .google{
+        width: 60%;
+    }
+}
+
+@media(min-width:577px) and (max-width:768px){
+    .google{
+        width: 50%;
+    }
+}
+
+@media(min-width:769px) and (max-width:1000px){
+    .google{
+        width: 50%;
+    }
+}
+
+@media(min-width:1001px) and (max-width:1200px){
+    .google{
+        width: 50%;
+    }
+}
+
+@media(max-width:300px){
+    .google>p{
+        font-size: 1em;
+    }
+}
+
+.hr{
+    margin: 10px;
+    width: 80%;
+    height: 5px;
+    border-bottom: 1px solid #ffffff80;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.holder{
+    width: 23%;
+}
+
+.holder p{
+    color: white;
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif)),Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: smaller;
+}
+
+input{
+    width: 21%;
+    padding: 10px;
+    border: none;
+    outline: 1px solid white;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.log{
+    margin-top: 10px;
+    background-color: #1ed760;
+    width: 20%;
+    border: 1px solid #1ed760;
+    border-radius: 10px;
+}
+
+@media(max-width:300px){
+    .log{
+        width: 40%;
+    }
+}
+
+.log p{
+    color: black;
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif)),Helvetica,Arial,sans-serif;
+    text-align: center;
+    font-size: smaller;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.fyp{
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.fyp p{
+    color: white;
+    text-decoration: underline;
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif)),Helvetica,Arial,sans-serif;
+}
+
+.dont{
+    display: flex;
+    gap: 5px;
+    margin: 5px;
+}
+
+.dont p{
+    font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif)),Helvetica,Arial,sans-serif;
+    color: #ffffff80;
+    cursor: pointer;
+}
+
+@media(max-width:315px)
+{
+    .dont p{
+        font-size: 0.75em;
+    }
+
+}
+
+@media(max-width:450px){
+    .holder{
+        width: 95%;
+    }
+
+    input{
+        width: 89%;
+    }
+
+    .log{
+        width: 50%;
+    }
+}
+
+@media(min-width:451px) and (max-width:500px){
+    .holder{
+        width: 80%;
+    }
+
+    input{
+        width: 75%;
+    }
+
+    .log{
+        width: 50%;
+    }
+}
+
+@media(min-width:501px) and (max-width:550px){
+    .holder{
+        width: 70%;
+    }
+
+    input{
+        width: 65%;
+    }
+
+    .log{
+        width: 50%;
+    }
+}
+
+@media(min-width:551px) and (max-width:600px){
+    .holder{
+        width: 60%;
+    }
+
+    input{
+        width: 55%;
+    }
+
+    .log{
+        width: 50%;
+    }
+}
+
+@media(min-width:601px) and (max-width:800px){
+    .holder{
+        width: 50%;
+    }
+
+    input{
+        width: 47%;
+    }
+
+    .log{
+        width: 50%;
+    }
+}
+
+@media(min-width:801px) and (max-width:1000px){
+    .holder{
+        width: 40%;
+    }
+
+    input{
+        width: 37%;
+    }
+
+    .log{
+        width: 30%;
+    }
+}
+
+@media(min-width:1001px) and (max-width:1100px){
+    .holder{
+        width: 30%;
+    }
+
+    input{
+        width: 28% ;
+    }
+}
